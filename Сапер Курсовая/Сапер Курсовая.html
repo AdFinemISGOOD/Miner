@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="work.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Сапер. Курсовая JS</h1>
+      <div class="minesweeper">
+        <form class="options" >
+          <input type="radio" name="radioOptions" value="9" checked="checked">Легкий
+          <input type="radio" name="radioOptions" value="15">Средний
+          <input type="radio" name="radioOptions" value="20">Тяжелый
+        </form>
+        <div class="top">
+          <div class="mines">
+            <img id="mine0">
+            <img id="mine1">
+          </div>
+          <img class="imgface" onClick="init(9)" src="images/face/facesmile.gif">
+          <div class="timer">
+            <img id="time0">
+            <img id="time1">
+            <img id="time2">
+          </div>
+        </div>
+        <div class="grid"></div>
+      </div>
+      <p>Левая кнопка мыши - открытие ячейки, средняя кнопка мыши - "флаг" или "вопрос"</p>
+      <footer>Барышев Александр группа 6896</footer>
+    </div>
+  </body>
+</html>
